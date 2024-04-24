@@ -24,6 +24,8 @@ header{
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
    
 }
+
+
 .container{
     
     width: 380px;
@@ -36,6 +38,10 @@ header{
     padding: 20px;
     
 }
+ #icon {
+    height: 50px;
+    width: 50px;
+ }
 
 .search-box{
     width: 100%;
