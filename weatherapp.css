@@ -9,35 +9,31 @@
 
 body{
     min-height: 100vh;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient(135deg,#153677,#4e085f); */
+    
     background-image: url(bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
+
 header{
     color: #fff;
     margin: 5px;
     font-size: 50px;
     text-align: center;
     font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
-    /* text-decoration: underline; */
+   
 }
 .container{
-    /* margin-top: 25px; */
-    margin-left: 500px;
-    width: 350px;
+    
+    width: 380px;
     height: min-content;
-    /* background-color: #b9b5b5; */
-    /* background-image: linear-gradient(white, rgb(66, 66, 133)); */
-    /* background-image: url(bg.jpg); */
+    margin: auto;
+   
     backdrop-filter: blur(100px);
     border: 1px solid black; 
     border-radius: 20px;
-    padding: 28px;
+    padding: 20px;
     
 }
 
