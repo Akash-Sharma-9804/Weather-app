@@ -170,8 +170,9 @@ header{
     width: 80%;
 }
 footer {
+    color:white;
     font-weight: bolder;
-    /* margin-top: 50px; */
+ margin-top: 20px; 
     display: flex;
     justify-content: center;
   }
