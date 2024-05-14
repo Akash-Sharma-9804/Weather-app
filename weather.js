@@ -1,4 +1,4 @@
-const inputBox = document.querySelector('.input-box');
+const inputBox = document.getElementById('input-box');
 const searchBtn = document.getElementById('searchBtn');
 const weather_img = document.querySelector('.weather-img');
 const temperature = document.querySelector('.temperature');
@@ -6,14 +6,17 @@ const description = document.querySelector('.description');
 const humidity = document.getElementById('humidity');
 const wind_speed = document.getElementById('wind-speed');
 
+
 const location_not_found = document.querySelector('.location-not-found');
 
 const weather_body = document.querySelector('.weather-body');
 
-
+////////////-----------------------   API  ---------------------------//////////////////////
 async function checkWeather(city){
     const api_key = "1103f55ba556cef9f6202f9178cccdcd";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
+                 
+////////////-----------------------   weather Data  ---------------------------//////////////////////
 
     const weather_data = await fetch(`${url}`).then(response => response.json());
 
@@ -34,6 +37,7 @@ async function checkWeather(city){
     humidity.innerHTML = `${weather_data.main.humidity}%`;
     wind_speed.innerHTML = `${weather_data.wind.speed}Km/H`;
 
+////////////-----------------------  Weather images ---------------------------//////////////////////
 
     switch(weather_data.weather[0].main){
         case 'Clouds':
@@ -56,12 +60,16 @@ async function checkWeather(city){
 
     console.log(weather_data);
 }
+
+////////////-----------------------   Enter Search  ---------------------------//////////////////////
+
 inputBox.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         checkWeather(inputBox.value);
     }
 });
+////////////-----------------------    Search  ---------------------------//////////////////////
 
-searchBtn.addEventListener('click',()=>{
+searchBtn.addEventListener('click', ()=>{
     checkWeather(inputBox.value);
 });
