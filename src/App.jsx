@@ -42,7 +42,7 @@ function App() {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="/Weather.jfif"
+                  src="./Weather.jfif"
                   alt="Weather-live"
                   className="w-9 h-9 rounded-xl object-cover shadow-sm"
                 />

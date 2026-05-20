@@ -63,7 +63,7 @@ export const getWeatherBackground = (condition) => {
   if (!condition) {
     return {
       gradient: 'from-sky-100 via-blue-50 to-white',
-      image: "url('/Generic%20pleasant%20sky.jpg')",
+      image: "url('./Generic%20pleasant%20sky.jpg')",
     };
   }
 
@@ -114,7 +114,7 @@ export const getWeatherBackground = (condition) => {
 
   return {
     gradient: 'from-sky-100 via-blue-50 to-white',
-    image: "url('/Generic%20pleasant%20sky.jpg')",
+    image: "url('./Generic%20pleasant%20sky.jpg')",
   };
 };
 
