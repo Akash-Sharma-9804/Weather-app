@@ -72,43 +72,43 @@ export const getWeatherBackground = (condition) => {
   if (c.includes('rain') || c.includes('drizzle')) {
     return {
       gradient: 'from-slate-200 via-blue-100 to-slate-100',
-      image: "url('/Rain-Drizzle.jpg')",
+      image: "url('./Rain-Drizzle.jpg')",
     };
   }
   if (c.includes('thunder') || c.includes('storm')) {
     return {
       gradient: 'from-slate-200 via-purple-100 to-slate-100',
-      image: "url('/Thunderstorm.jpg')",
+      image: "url('./Thunderstorm.jpg')",
     };
   }
   if (c.includes('snow') || c.includes('ice') || c.includes('sleet')) {
     return {
       gradient: 'from-blue-50 via-slate-100 to-white',
-      image: "url('/Snow-Ice.jpg')",
+      image: "url('./Snow-Ice.jpg')",
     };
   }
   if (c.includes('mist') || c.includes('fog')) {
     return {
       gradient: 'from-slate-200 via-slate-100 to-slate-200',
-      image: "url('/Mist-%20Fog.jpg')",
+      image: "url('./Mist-%20Fog.jpg')",
     };
   }
   if (c.includes('smoke') || c.includes('haze') || c.includes('dust')) {
     return {
       gradient: 'from-stone-200 via-amber-100 to-slate-100',
-      image: "url('/Smoke%20-%20Dust.jpg')",
+      image: "url('./Smoke%20-%20Dust.jpg')",
     };
   }
   if (c.includes('cloud')) {
     return {
       gradient: 'from-slate-200 via-slate-100 to-slate-200',
-      image: "url('/Clouds-Overcast.jpg')",
+      image: "url('./Clouds-Overcast.jpg')",
     };
   }
   if (c.includes('clear')) {
     return {
       gradient: 'from-sky-100 via-blue-50 to-white',
-      image: "url('/Clear-Sunny.jpg')",
+      image: "url('./Clear-Sunny.jpg')",
     };
   }
 
